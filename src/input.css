@@ -20,15 +20,65 @@
         background-color: white;
         display: block;
         border-radius: 5rem;
+        transition: .5s ease;
+        
     }
     .toggle__menu span:nth-child(2){
         margin: .2rem 0;
     }
-    
+    .toggle__menu.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[225deg] ease-out duration-[.5s];
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0;
+    }
+    .toggle__menu.open span:last-child{
+        @apply translate-x-0 translate-y-[-3px] rotate-[-225deg] ease-out duration-[.5s];
+    }
     .header__nav ul{
-        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0;
+        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0 z-[999] lg:static lg:w-full lg:h-auto;
+    }
+    .header__nav ul li:not(:first-child), .header__nav ul li:not(:last-child){
+        @apply mx-[1rem];
     }
     .header__nav ul.open{
         @apply w-[85%]  p-[2rem];
+    }
+    .arjay.show{
+        @apply w-full;
+    }
+    .items .cards:not(:first-child), .items cards:not(:last-child){
+        @apply my-[3rem];
+    }
+
+    .footer__wrapper .social ul li:nth-child(2){
+        @apply mx-[1rem];
+    }
+
+    .item .item__top h4{
+        @apply pb-[1rem]
+    }
+
+    .item ul li{
+        @apply pb-[1rem] hover:text-green font-semibold  cursor-pointer
+    }
+
+    .item ul{
+        @apply hidden ease-out duration-[.5s] lg:block lg:w-full lg:h-auto
+    }
+
+    .item ul.open{
+        @apply block ease-out duration-[.5s]
+    }
+
+    .item__top i.open{
+        @apply rotate-[-180deg] ease-in duration-[.5s];
+    }
+    .item__top i{
+        @apply  ease-out duration-[.5s] lg:hidden
+    }
+    
+    .btn button{
+        @apply inline-block py-[.8rem] lg:px-[3rem] lg:mr-[1rem]
     }
 } 

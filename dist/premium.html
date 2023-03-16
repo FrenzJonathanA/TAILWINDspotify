@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Premium</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
+        <div class="arjay absolute w-0 top-0 h-[100vh] bg-dark opacity-[.7] z-[1]"></div>
     <header class="header bg-dark relative">
         <div class="container">
-            <div class="header__wrapper flex items-center justify-between">
+            <div class="header__wrapper flex items-center justify-between -z-[1]">
                 <div class="branding ">
-                    <img src="./img/logofinal.png" alt="" class="w-[8rem] ">
+                    <img src="./img/logofinal.png" alt="" class="w-[8rem]">
                 </div>
                 <div class="header__nav">
-                    <ul>
-                        <li class="text-light font-bold text-[2.5rem] hover:text-green"><a href="" ></a>Premium</li>
-                        <li class="text-light font-bold text-[2.5rem] hover:text-green"><a href="" ></a>Support</li>
-                        <li class="text-light font-bold text-[2.5rem] hover:text-green"><a href="" ></a>Download</li>
-                        <li class="text-light rotate-90 w-fit ml-[.8rem] my-[2rem]">|</li>
-                        <li class="text-light font-semibold text-[1.5rem] hover:text-green"><a href="" ></a>Sign-up</li>
-                        <li class="text-light font-semibold text-[1.5rem] hover:text-green"><a href="" ></a>Log in</li>
+                    <ul class="lg:flex lg:items-center">
+                        <li class="text-light font-bold text-[2.5rem] hover:text-green lg:font-semibold lg:text-[1.3rem]"><a href="" ></a>Premium</li>
+                        <li class="text-light font-bold text-[2.5rem] hover:text-green lg:font-semibold lg:text-[1.3rem]"><a href="" ></a>Support</li>
+                        <li class="text-light font-bold text-[2.5rem] hover:text-green lg:font-semibold lg:text-[1.3rem]"><a href="" ></a>Download</li>
+                        <li class="text-light rotate-90 w-fit ml-[.8rem] my-[2rem] lg:rotate-[0deg] lg:ml-0 lg:my-0">|</li>
+                        <li class="text-light font-semibold text-[1.5rem] hover:text-green lg:font-semibold lg:text-[1.3rem]"><a href="" ></a>Sign-up</li>
+                        <li class="text-light font-semibold text-[1.5rem] hover:text-green lg:font-semibold lg:text-[1.3rem]"><a href="" ></a>Log in</li>
+                        <figure>
+                            <img src="./img/logofinal.png" alt="" class="w-[8rem] cursor-pointer absolute bottom-[2rem] left-[2rem] lg:hidden">
+                        </figure >
                     </ul>    
                 </div>
-                <div class="toggle__menu z-[999]">
+                <div class="toggle__menu z-[999] lg:hidden" >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -32,6 +37,148 @@
             </div>
         </div>
     </header>
+
+    <section class="banner bg-darkgreen">
+        <div class="contianer p-[2rem]">
+            <div class="banner__wrapper items-center lg:flex lg:mx-[11.5rem]">
+                <div class="content text-lightgreen lg:py-[5rem] lg:mr-[3rem]">
+                    <h1 class="text-[1.7rem] font-bold lg:text-[3rem] ">Get Premium free for 2 months</h1>
+                    <h2 class="text-[1.1rem] my-[1rem] font-semibold lg:text-[1.8rem] lg:my-[.5rem]">Limited time offer for Individual or Student plans. Cancel anytime.</h2>
+                    <div class="btn">
+                        <ul class="my-[3rem] font-semibold lg:flex lg:w-[28rem] ">
+                            <li><button class=" mb-[.5rem] bg-dark w-[100%] rounded-[2rem] hover:scale-[105%] lg:mr-[2rem]">GET STARTED</button></li>
+                            <span class="w-6"></span>
+                            <li><BUTTON class=" border-[2px] w-[100%] rounded-[2rem] hover:bg-black hover:bg-opacity-[30%] hover:scale-[105%] ">VIEW PLANS</BUTTON></li>
+                        </ul>
+                    </div>
+                    <p class=" text-[.7rem] lg:text-[1.1rem]"><a class="underline" href="">Terms and conditions apply.</a> Monthly subscription fee applies after. 2 months free only open to users who haven't already tried Premium. Offer ends March 31, 2023.</p>   
+                </div>
+                <figure>
+                    <img class=" m-auto p-[3rem] lg:w-[40rem] lg:p-0 lg:py-[5rem]" src="./img/banner.jpg" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="premium">
+        <div class="container">
+            <div class="premium__wrapper lg:mx-[10rem]">
+                <div class="lead">
+                    <h2 class="text-[2rem] font-bold text-center pb-[3rem]">Why go Premium?</h2>
+                </div>
+                <div class="items lg:grid lg:grid-cols-4 lg:items-center">
+                    <div class="cards flex gap-5 items-center lg:block ">
+                        <img src="./img/note.jpg" alt="" class="w-[7rem] lg:m-auto lg:pb-2rem">
+                        <div class="details lg:text-center">
+                            <h3 class="text-[1.5rem] font-bold ">Download music</h3>
+                            <p class="text-[1rem]">Listen anywhere</p>
+                        </div>
+                    </div>
+                    <div class="cards flex gap-5 items-center lg:block">
+                        <img src="./img/warning.jpg" alt="" class="w-[7rem] lg:m-auto">
+                        <div class="details lg:text-center">
+                            <h3 class="text-[1.5rem] font-bold">Ad-free music listening.</h3>
+                            <p class="text-[1rem]">Enjoy nonstop music.</p>
+                        </div>
+                    </div>
+                    <div class="cards flex gap-5 items-center lg:block">
+                        <img src="./img/music.jpg" alt="" class="w-[7rem] lg:m-auto">
+                        <div class="details lg:text-center">
+                            <h3 class="text-[1.5rem] font-bold">Play any song.</h3>
+                            <p class="text-[1rem]">Even on mobile.</p>
+                        </div>
+                    </div>
+                    <div class="cards flex gap-5 items-center lg:block">
+                        <img src="./img/play.jpg" alt="" class="w-[7rem] lg:m-auto">
+                        <div class="details lg:text-center">
+                            <h3 class="text-[1.5rem] font-bold">Unlimited skips.</h3>
+                            <p class="text-[1rem]">Just hit next.</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer bg-dark">
+        <div class="container">
+            <div class="footer__wrapper lg:py-[5rem]">
+                <div class="top lg:flex lg:justify-between">
+                    <div class="figure">
+                        <img class="w-[8rem] pb-[3rem]" src="./img/logofinal.png" alt="">
+                    </div>
+                    <div class="click lg:flex lg:pr-[5rem] lg:pb-[5rem] ">
+                        <div class="item lg:w-[15rem]">
+                            <div class="item__top flex text-[1rem] items-center justify-between  font-bold">
+                                <h4 class="text-grayish lg:mt-[1.6rem]">COMPANY</h4>
+                                <i class="fa-solid fa-chevron-down text-light"></i> 
+                            </div>
+                            <ul class="text-light pl-[1rem] text-[1.1rem]">
+                                <li><a href="">About</a></li>
+                                <li><a href="">Jobs</a></li>
+                                <li><a href="">For the Record</a></li>
+                            </ul>
+                        </div>
+                        <div class="item mt-[2rem] lg:mt-0 lg:w-[15rem]">
+                            <div class="item__top flex text-[1rem] items-center justify-between  font-bold">
+                                <h4 class="text-grayish lg:mt-[1.6rem]">COMMUNITIES</h4>
+                                <i class="fa-solid fa-chevron-down text-light "></i>    
+                            </div>
+                            <ul class="text-light pl-[1rem] text-[1.1rem]">
+                                <li><a href="">For Artists</a></li>
+                                <li><a href="">Developers</a></li>
+                                <li><a href="">Advertising</a></li>
+                                <li><a href="">Investors</a></li>
+                                <li><a href="">Vendors</a></li>
+                            </ul>
+                        </div>
+                        <div class="item mt-[2rem] lg:mt-0 lg:w-[15rem]">
+                            <div class="item__top flex text-[1rem] items-center justify-between  font-bold">
+                                <h4 class="text-grayish lg:mt-[1.6rem]">USEFUL LINKS</h4>
+                                <i class="fa-solid fa-chevron-down text-light "></i> 
+                            </div>
+                            <ul class="text-light pl-[1rem] text-[1.1rem]">
+                                <li><a href="">Support</a></li>
+                                <li><a href="">Web Player</a></li>
+                                <li><a href="">Free Mobile App</a></li>
+                            </ul>
+                        </div>
+                    </div>       
+                    <div class="social text-light text-[1rem] lg:text-[1.5rem] lg:mt-[1.6rem]">
+                        <ul class="flex pt-[5rem] pb-[3rem] lg:pt-0">
+                            <li><i class="fa-brands fa-instagram  px-[1.1rem] py-[1rem] hover:text-green bg-gray-700 bg-opacity-8 rounded-full "></i></li>
+                            <li><i class="fa-brands fa-twitter  px-[1rem] py-[1rem] hover:text-green bg-gray-700 bg-opacity-8 rounded-full "></i></li>
+                            <li><i class="fa-brands fa-facebook-f px-[1.3rem] py-[1rem] hover:text-green bg-gray-700 bg-opacity-8 rounded-full "></i></i></li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="bottom text-grayish">
+                    <div class="usa flex flex-row-reverse items-center"> 
+                        <a href="" class="text-[.8rem] hover:text-green right-0 pl-[.2rem]"> USA</a>
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    
+                    <div class="bgroup text-grayish flex">
+                        <div class="legalities max-w-[40rem] lg:flex lg:items-center">
+                            <ul class= "flex pb-[.3rem]">
+                                <li><a href="" class="text-[.8rem] hover:text-green pr-[1rem] lg:text-[1rem] lg:pr-[1.5rem]">Legal</a></li>
+                                <li><a href="" class="text-[.8rem] hover:text-green pr-[1rem] lg:text-[1rem] lg:pr-[1.5rem]">Privacy Center</a></li>
+                                <li><a href="" class="text-[.8rem] hover:text-green pr-[1rem] lg:text-[1rem] lg:pr-[1.5rem]">Privacy Policy</a></li>
+                                <li><a href="" class="text-[.8rem] hover:text-green pr-[1rem] lg:text-[1rem] lg:pr-[1.5rem]">Cookies</a></li>    
+                            </ul>
+                            <a href="" class="text-[.8rem] hover:text-green pr-[1rem] lg:text-[1rem] lg:pr-[1.5rem]">About Ads</a></li>
+                            <a href="" class="text-[1rem] hover:text-green">Cookies Settings </a><i class="fa-solid fa-toggle-off lg:pl-[.3rem]"></i></li>
+                        </div>
+                        <span class="text-[.7rem] pt-[.4rem] ml-[3rem] lg:text-[1rem] lg:pt-[.2rem] lg:ml-[45.95rem] ">© 2023 Spotify AB</span>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
